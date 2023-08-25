@@ -12,7 +12,7 @@
    <FUNCTIONS>
     <item>
      <FUNCNAME>TABLEFRAME_ZOT_12_ZMNF</FUNCNAME>
-     <SHORT_TEXT>Extended Table Maintenance: Upper Level</SHORT_TEXT>
+     <SHORT_TEXT>Genişletilmiş tablo bakımı: Üst düzey</SHORT_TEXT>
      <IMPORT>
       <RSIMP>
        <PARAMETER>VIEW_ACTION</PARAMETER>
@@ -106,7 +106,7 @@
     <item>
      <FUNCNAME>TABLEPROC_ZOT_12_ZMNF</FUNCNAME>
      <GLOBAL_FLAG>X</GLOBAL_FLAG>
-     <SHORT_TEXT>Lower-level extended table maintenance</SHORT_TEXT>
+     <SHORT_TEXT>Genişletilmiş tablo bakımı: Alt düzey</SHORT_TEXT>
      <IMPORT>
       <RSIMP>
        <PARAMETER>FCODE</PARAMETER>
@@ -272,7 +272,7 @@
       <PROGRAM>SAPLZOT_12_ZMNF</PROGRAM>
       <SCREEN>0001</SCREEN>
       <LANGUAGE>T</LANGUAGE>
-      <DESCRIPT>View Maintenance: Overview Screen ZOT_12_T_ZMN</DESCRIPT>
+      <DESCRIPT>Görünüm bakımı: Genel bakış ekranı ZOT_12_T_ZMN</DESCRIPT>
       <TYPE>N</TYPE>
       <NEXTSCREEN>0001</NEXTSCREEN>
       <LINES>061</LINES>
@@ -375,13 +375,14 @@
        <CONT_NAME>TCTRL_ZOT_12_T_ZMN</CONT_NAME>
        <TYPE>TEXT</TYPE>
        <NAME>*ZOT_12_T_ZMN-INDEX_NO</NAME>
-       <TEXT>+_______________________________________</TEXT>
        <LINE>001</LINE>
        <COLUMN>001</COLUMN>
        <LENGTH>040</LENGTH>
-       <VISLENGTH>005</VISLENGTH>
+       <VISLENGTH>010</VISLENGTH>
        <HEIGHT>001</HEIGHT>
        <FORMAT>CHAR</FORMAT>
+       <FROM_DICT>X</FROM_DICT>
+       <MODIFIC>1</MODIFIC>
        <REQU_ENTRY>N</REQU_ENTRY>
        <TC_HEADING>X</TC_HEADING>
       </RPY_DYFATC>
@@ -390,13 +391,14 @@
        <CONT_NAME>TCTRL_ZOT_12_T_ZMN</CONT_NAME>
        <TYPE>TEXT</TYPE>
        <NAME>*ZOT_12_T_ZMN-BASLANGICT</NAME>
-       <TEXT>+_______________________________________</TEXT>
        <LINE>001</LINE>
        <COLUMN>002</COLUMN>
        <LENGTH>040</LENGTH>
        <VISLENGTH>010</VISLENGTH>
        <HEIGHT>001</HEIGHT>
        <FORMAT>CHAR</FORMAT>
+       <FROM_DICT>X</FROM_DICT>
+       <MODIFIC>1</MODIFIC>
        <REQU_ENTRY>N</REQU_ENTRY>
        <TC_HEADING>X</TC_HEADING>
       </RPY_DYFATC>
@@ -404,14 +406,15 @@
        <CONT_TYPE>TABLE_CTRL</CONT_TYPE>
        <CONT_NAME>TCTRL_ZOT_12_T_ZMN</CONT_NAME>
        <TYPE>TEXT</TYPE>
-       <NAME>*ZOT_12_T_ZMN-BASLANGICS</NAME>
-       <TEXT>+_______________________________________</TEXT>
+       <NAME>*ZOT_12_T_ZMN-BASLANGIC_S</NAME>
        <LINE>001</LINE>
        <COLUMN>003</COLUMN>
        <LENGTH>040</LENGTH>
        <VISLENGTH>010</VISLENGTH>
        <HEIGHT>001</HEIGHT>
        <FORMAT>CHAR</FORMAT>
+       <FROM_DICT>X</FROM_DICT>
+       <MODIFIC>1</MODIFIC>
        <REQU_ENTRY>N</REQU_ENTRY>
        <TC_HEADING>X</TC_HEADING>
       </RPY_DYFATC>
@@ -420,13 +423,14 @@
        <CONT_NAME>TCTRL_ZOT_12_T_ZMN</CONT_NAME>
        <TYPE>TEXT</TYPE>
        <NAME>*ZOT_12_T_ZMN-BITIST</NAME>
-       <TEXT>+_______________________________________</TEXT>
        <LINE>001</LINE>
        <COLUMN>004</COLUMN>
        <LENGTH>040</LENGTH>
        <VISLENGTH>010</VISLENGTH>
        <HEIGHT>001</HEIGHT>
        <FORMAT>CHAR</FORMAT>
+       <FROM_DICT>X</FROM_DICT>
+       <MODIFIC>1</MODIFIC>
        <REQU_ENTRY>N</REQU_ENTRY>
        <TC_HEADING>X</TC_HEADING>
       </RPY_DYFATC>
@@ -434,14 +438,15 @@
        <CONT_TYPE>TABLE_CTRL</CONT_TYPE>
        <CONT_NAME>TCTRL_ZOT_12_T_ZMN</CONT_NAME>
        <TYPE>TEXT</TYPE>
-       <NAME>*ZOT_12_T_ZMN-BITISS</NAME>
-       <TEXT>+_______________________________________</TEXT>
+       <NAME>*ZOT_12_T_ZMN-BITIS_S</NAME>
        <LINE>001</LINE>
        <COLUMN>005</COLUMN>
        <LENGTH>040</LENGTH>
        <VISLENGTH>010</VISLENGTH>
        <HEIGHT>001</HEIGHT>
        <FORMAT>CHAR</FORMAT>
+       <FROM_DICT>X</FROM_DICT>
+       <MODIFIC>1</MODIFIC>
        <REQU_ENTRY>N</REQU_ENTRY>
        <TC_HEADING>X</TC_HEADING>
       </RPY_DYFATC>
@@ -468,7 +473,7 @@
        <LINE>001</LINE>
        <COLUMN>001</COLUMN>
        <LENGTH>005</LENGTH>
-       <VISLENGTH>005</VISLENGTH>
+       <VISLENGTH>010</VISLENGTH>
        <HEIGHT>001</HEIGHT>
        <GROUP1>KEY</GROUP1>
        <FORMAT>NUMC</FORMAT>
@@ -499,14 +504,14 @@
        <CONT_TYPE>TABLE_CTRL</CONT_TYPE>
        <CONT_NAME>TCTRL_ZOT_12_T_ZMN</CONT_NAME>
        <TYPE>TEMPLATE</TYPE>
-       <NAME>ZOT_12_T_ZMN-BASLANGICS</NAME>
-       <TEXT>__________</TEXT>
+       <NAME>ZOT_12_T_ZMN-BASLANGIC_S</NAME>
+       <TEXT>________</TEXT>
        <LINE>001</LINE>
        <COLUMN>003</COLUMN>
-       <LENGTH>010</LENGTH>
+       <LENGTH>008</LENGTH>
        <VISLENGTH>010</VISLENGTH>
        <HEIGHT>001</HEIGHT>
-       <FORMAT>DATS</FORMAT>
+       <FORMAT>TIMS</FORMAT>
        <FROM_DICT>X</FROM_DICT>
        <MODIFIC>X</MODIFIC>
        <INPUT_FLD>X</INPUT_FLD>
@@ -533,14 +538,14 @@
        <CONT_TYPE>TABLE_CTRL</CONT_TYPE>
        <CONT_NAME>TCTRL_ZOT_12_T_ZMN</CONT_NAME>
        <TYPE>TEMPLATE</TYPE>
-       <NAME>ZOT_12_T_ZMN-BITISS</NAME>
-       <TEXT>__________</TEXT>
+       <NAME>ZOT_12_T_ZMN-BITIS_S</NAME>
+       <TEXT>________</TEXT>
        <LINE>001</LINE>
        <COLUMN>005</COLUMN>
-       <LENGTH>010</LENGTH>
+       <LENGTH>008</LENGTH>
        <VISLENGTH>010</VISLENGTH>
        <HEIGHT>001</HEIGHT>
-       <FORMAT>DATS</FORMAT>
+       <FORMAT>TIMS</FORMAT>
        <FROM_DICT>X</FROM_DICT>
        <MODIFIC>X</MODIFIC>
        <INPUT_FLD>X</INPUT_FLD>
@@ -594,13 +599,13 @@
        <LINE>    FIELD ZOT_12_T_ZMN-BASLANGICT .</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
-       <LINE>    FIELD ZOT_12_T_ZMN-BASLANGICS .</LINE>
+       <LINE>    FIELD ZOT_12_T_ZMN-BASLANGIC_S .</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
        <LINE>    FIELD ZOT_12_T_ZMN-BITIST .</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
-       <LINE>    FIELD ZOT_12_T_ZMN-BITISS .</LINE>
+       <LINE>    FIELD ZOT_12_T_ZMN-BITIS_S .</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
        <LINE>    MODULE SET_UPDATE_FLAG ON CHAIN-REQUEST.</LINE>

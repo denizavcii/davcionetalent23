@@ -3,11 +3,10 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <PROGDIR>
-    <NAME>ZOT_12_T_ZMN</NAME>
-    <DBAPL>S</DBAPL>
+    <NAME>ZOT_12_P_FLIGHT</NAME>
     <SUBC>1</SUBC>
+    <RLOAD>T</RLOAD>
     <FIXPT>X</FIXPT>
-    <LDBNAME>D$S</LDBNAME>
     <UCCHECK>X</UCCHECK>
    </PROGDIR>
    <I18N_TPOOL>
@@ -16,8 +15,8 @@
      <TEXTPOOL>
       <item>
        <ID>R</ID>
-       <ENTRY>Zaman farkı</ENTRY>
-       <LENGTH>11</LENGTH>
+       <ENTRY>FLIGHT</ENTRY>
+       <LENGTH>6</LENGTH>
       </item>
      </TEXTPOOL>
     </item>
